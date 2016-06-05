@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9/05/2016 11:11:39 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="co.com.inversiones_xyz.ss.dto.Seguimiento" table="SEGUIMIENTO">
+    
+        <id name="id" type="java.lang.Integer">
+            <column name="Id" precision="11"/>
+            <generator class="assigned" />
+        </id>
+        <property name="fechaCreacion" type="java.util.Date">
+            <column name="FechaCreacion" not-null="true"/>
+        </property>
+        <property name="fechaReasignada" type="java.util.Date">
+            <column name="FechaReasignada" />
+        </property>
+        <property name="fechaRespondida" type="java.util.Date">
+            <column name="FechaRespondida" />
+        </property>
+        <property name="estado" type="byte">
+            <column name="Estado" precision="1"/>
+        </property>
+        <property name="satisfaccion" type="java.lang.String">
+            <column name="Satisfaccion" length="10"/>
+        </property>
+        <many-to-one name="responsable" class="co.com.inversiones_xyz.ss.dto.Usuario">
+            <column name="Responsable" length="10" not-null="true"/>
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,79 @@
+22:39:10,474  INFO ContextLoader:285 - Root WebApplicationContext: initialization started
+22:39:10,731  INFO XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jun 04 22:39:10 COT 2016]; root of context hierarchy
+22:39:10,810  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [configuracion.xml]
+22:39:11,763  INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+22:39:12,029  INFO Version:37 - Hibernate Commons Annotations 3.2.0.Final
+22:39:12,037  INFO Environment:603 - Hibernate 3.6.10.Final
+22:39:12,040  INFO Environment:636 - hibernate.properties not found
+22:39:12,048  INFO Environment:814 - Bytecode provider name : javassist
+22:39:12,053  INFO Environment:695 - using JDK 1.4 java.sql.Timestamp handling
+22:39:12,196  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,237  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,252  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,261  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,274  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,285  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,317  WARN DTDEntityResolver:73 - recognized obsolete hibernate namespace http://hibernate.sourceforge.net/. Use namespace http://www.hibernate.org/dtd/ instead. Refer to Hibernate 3.6 Migration Guide!
+22:39:12,401  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.Producto -> PRODUCTO
+22:39:12,418  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.Rol -> ROL
+22:39:12,420  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.Seguimiento -> SEGUIMIENTO
+22:39:12,427  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.Solicitud -> SOLICITUD
+22:39:12,429  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.Sucursal -> SUCURSAL
+22:39:12,430  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.TipoSolicitud -> TIPOSOLICITUD
+22:39:12,430  INFO HbmBinder:353 - Mapping class: co.com.inversiones_xyz.ss.dto.Usuario -> usuario
+22:39:12,439  INFO Configuration:1676 - Hibernate Validator not found: ignoring
+22:39:12,447  INFO LocalSessionFactoryBean:713 - Building new Hibernate SessionFactory
+22:39:12,457  INFO HibernateSearchEventListenerRegister:75 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+22:39:12,468  INFO ConnectionProviderFactory:173 - Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+22:39:12,868  INFO Dialect:136 - Using dialect: org.hibernate.dialect.MySQLDialect
+22:39:12,881  INFO SettingsFactory:126 - Database ->
+       name : MySQL
+    version : 5.5.24-log
+      major : 5
+      minor : 5
+22:39:12,882  INFO SettingsFactory:132 - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+22:39:12,889  INFO TransactionFactoryFactory:65 - Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+22:39:12,892  INFO TransactionManagerLookupFactory:83 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+22:39:12,892  INFO SettingsFactory:179 - Automatic flush during beforeCompletion(): disabled
+22:39:12,892  INFO SettingsFactory:183 - Automatic session close at end of transaction: disabled
+22:39:12,893  INFO SettingsFactory:190 - JDBC batch size: 15
+22:39:12,893  INFO SettingsFactory:193 - JDBC batch updates for versioned data: disabled
+22:39:12,896  INFO SettingsFactory:198 - Scrollable result sets: enabled
+22:39:12,896  INFO SettingsFactory:206 - JDBC3 getGeneratedKeys(): enabled
+22:39:12,897  INFO SettingsFactory:214 - Connection release mode: auto
+22:39:12,898  INFO SettingsFactory:238 - Maximum outer join fetch depth: 2
+22:39:12,898  INFO SettingsFactory:241 - Default batch fetch size: 1
+22:39:12,899  INFO SettingsFactory:245 - Generate SQL with comments: disabled
+22:39:12,899  INFO SettingsFactory:249 - Order SQL updates by primary key: disabled
+22:39:12,899  INFO SettingsFactory:253 - Order SQL inserts for batching: disabled
+22:39:12,900  INFO SettingsFactory:431 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+22:39:12,903  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+22:39:12,903  INFO SettingsFactory:261 - Query language substitutions: {}
+22:39:12,904  INFO SettingsFactory:266 - JPA-QL strict compliance: disabled
+22:39:12,904  INFO SettingsFactory:271 - Second-level cache: enabled
+22:39:12,904  INFO SettingsFactory:275 - Query cache: disabled
+22:39:12,905  INFO SettingsFactory:406 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+22:39:12,907  INFO SettingsFactory:285 - Optimize cache for minimal puts: disabled
+22:39:12,907  INFO SettingsFactory:294 - Structured second-level cache entries: disabled
+22:39:12,915  INFO SettingsFactory:314 - Echoing all SQL to stdout
+22:39:12,917  INFO SettingsFactory:323 - Statistics: disabled
+22:39:12,917  INFO SettingsFactory:327 - Deleted entity synthetic identifier rollback: disabled
+22:39:12,918  INFO SettingsFactory:343 - Default entity-mode: pojo
+22:39:12,918  INFO SettingsFactory:347 - Named query checking : enabled
+22:39:12,918  INFO SettingsFactory:351 - Check Nullability in Core (should be disabled when Bean Validation is on): disabled
+22:39:12,948  INFO SessionFactoryImpl:202 - building session factory
+22:39:12,956  INFO BasicTypeRegistry:150 - Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@56460780
+22:39:12,957  INFO BasicTypeRegistry:150 - Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@7c180e13
+22:39:12,957  INFO BasicTypeRegistry:150 - Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@d562d39
+22:39:12,957  INFO BasicTypeRegistry:150 - Type registration [blob] overrides previous : org.hibernate.type.BlobType@77340d44
+22:39:12,957  INFO BasicTypeRegistry:150 - Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@77340d44
+22:39:12,958  INFO BasicTypeRegistry:150 - Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@11a86e25
+22:39:12,958  INFO BasicTypeRegistry:150 - Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@2d7c9295
+22:39:12,958  INFO BasicTypeRegistry:150 - Type registration [clob] overrides previous : org.hibernate.type.ClobType@11ff5de6
+22:39:12,958  INFO BasicTypeRegistry:150 - Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@11ff5de6
+22:39:13,313  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+22:39:13,771  INFO ContextLoader:325 - Root WebApplicationContext: initialization completed in 3273 ms

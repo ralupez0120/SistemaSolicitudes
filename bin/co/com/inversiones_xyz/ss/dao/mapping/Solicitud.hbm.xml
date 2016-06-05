@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 9/05/2016 11:11:39 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="co.com.inversiones_xyz.ss.dto.Solicitud" table="SOLICITUD">
+        <id name="radicado" type="java.lang.Integer">
+            <column name="Radicado" precision="11"/>
+            <generator class="assigned" />
+        </id>
+        <property name="nombres" type="java.lang.String">
+            <column name="Nombres" length="40" not-null="true"/>
+        </property>
+        <property name="apellidos" type="java.lang.String">
+            <column name="Apellidos" length="40" not-null="true"/>
+        </property>
+        <property name="correo" type="java.lang.String">
+            <column name="Correo" length="100" not-null="true"/>
+        </property>
+        <property name="telefono" type="java.lang.String">
+            <column name="Telefono" length="10" not-null="true"/>
+        </property>
+        <property name="celular" type="java.lang.String">
+            <column name="Celular" length="10"/>
+        </property>
+        <property name="descripcion" type="java.lang.String">
+            <column name="Descripcion" not-null="true"/>
+        </property>
+        <many-to-one name="sucursal" class="co.com.inversiones_xyz.ss.dto.Sucursal">
+            <column name="Sucursal" length="10" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="tipoSolicitud" class="co.com.inversiones_xyz.ss.dto.TipoSolicitud">
+            <column name="TipoSolicitud" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="producto" class="co.com.inversiones_xyz.ss.dto.Producto">
+            <column name="Producto" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="seguimiento" class="co.com.inversiones_xyz.ss.dto.Seguimiento">
+            <column name="Seguimiento_Id" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
