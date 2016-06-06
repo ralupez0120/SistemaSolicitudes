@@ -16,6 +16,16 @@ import co.com.inversiones_xyz.ss.exception.DaoException;
 
 
 
+/**
+ * Clase que implementa los metodos de la interface SolicitudDAO
+ * @author 
+ * 		Juan Carlos Estrada
+ * 		Rafael Luna Pérez
+ * 		Joan Manuel Rodríguez
+ * @version 1.0.0
+ * 			29/05/2016
+ *
+ */
 public class SolicitudDAOHibernate extends HibernateDaoSupport implements SolicitudDAO {
 
 	/**
@@ -94,7 +104,7 @@ public class SolicitudDAOHibernate extends HibernateDaoSupport implements Solici
 
 	
 	/**
-	 * Permite obtener todas las solicitudes en el sistema
+	 * Permite obtener todas las solicitudes activas en el sistema
 	 */
 	@Override
 	public List<Solicitud> obtener() throws DaoException {

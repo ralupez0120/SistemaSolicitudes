@@ -20,10 +20,13 @@ import co.com.inversiones_xyz.ss.util.validations.Validaciones;
 
 
 /**
- * Clase que permite contiene la logica de negocio para el seguimiento de solicitudes
+ * Clase que contiene la logica de negocio para el seguimiento de solicitudes
  * 
- * @author Juan Carlos Estrada Rafael Luna Pérez Joan Manuel Rodríguez
- * @version 1.0.0 15/05/2016
+ * @author Juan Carlos 
+ * 		   Rafael Luna Pérez
+ * 		   Joan Manuel Rodríguez
+ * @version 1.0.0
+ * 			15/05/2016
  */
 @Transactional
 public class SeguimientoService {

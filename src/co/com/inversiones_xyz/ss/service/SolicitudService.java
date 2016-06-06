@@ -23,11 +23,12 @@ import co.com.inversiones_xyz.ss.exception.DaoException;
 import co.com.inversiones_xyz.ss.exception.ServiceException;
 import co.com.inversiones_xyz.ss.util.validations.Validaciones;
 
-
 /**
- * Clase que permite contiene la logica de negocio para una solicitud
+ * Clase que contiene la logica de negocio para una solicitud
  * 
- * @author Juan Carlos Estrada Rafael Luna Pérez Joan Manuel Rodríguez
+ * @author Juan Carlos Estrada
+ * 		   Rafael Luna Pérez
+ * 		   Joan Manuel Rodríguez
  * @version 1.0.0 12/05/2016
  */
 @Transactional
@@ -42,7 +43,6 @@ public class SolicitudService {
 	private RolDAO rolDAO;
 	private Rol rol;
 	private UsuarioService userService;
-
 
 	/**
 	 * Permite generar una solicitud una vez el cliente haya ingresado los
@@ -66,7 +66,7 @@ public class SolicitudService {
 	 *            codigo del tipo de solicitud
 	 * @param codigoProducto
 	 *            codigo del producto que adquirió el cliente
-	 *            
+	 * 
 	 * @return instancia a la nueva solicitud almacenada en el sistema
 	 * 
 	 * @throws DaoException
@@ -77,8 +77,8 @@ public class SolicitudService {
 	 *             validos
 	 */
 	public Solicitud generarSolicitud(int radicado, String nombres, String apellidos, String correo, String telefono,
-			String celular, String descripcion, String codigoSucursal, 
-			int codigoTipo, int codigoProducto, int idSeguimiento) throws DaoException, ServiceException {
+			String celular, String descripcion, String codigoSucursal, int codigoTipo, int codigoProducto,
+			int idSeguimiento) throws DaoException, ServiceException {
 
 		Solicitud solicitud = null;
 		Seguimiento seguimiento = null;
@@ -130,11 +130,11 @@ public class SolicitudService {
 		}
 		return solicitud;
 	}
-	
+
 	/**
 	 * Permite al gerente de cuentas hacer seguimiento a todas las solicitudes
-	 * activas en el sistema. Validaremos primero que el usuario ingresado 
-	 * tenga el rol de gerente de cuentas coorporativas.
+	 * activas en el sistema. Validaremos primero que el usuario ingresado tenga
+	 * el rol de gerente de cuentas coorporativas.
 	 * 
 	 * @param nombreUsuario
 	 *            nombre de usuario para obtener el rol y verificar que sea el
@@ -153,8 +153,8 @@ public class SolicitudService {
 		}
 		List<Solicitud> solicitudes = null;
 		if (userService.EsGerenteCuentas(nombreUsuario)) {
-			solicitudes=solicitudDAO.obtener();
-		} else{
+			solicitudes = solicitudDAO.obtener();
+		} else {
 			throw new ServiceException("usuario no es el gerente de cuentas coorporativas");
 		}
 		return solicitudes;
@@ -290,7 +290,6 @@ public class SolicitudService {
 	public void setRolDAO(RolDAO rolDAO) {
 		this.rolDAO = rolDAO;
 	}
-	
 
 	public Rol getRol() {
 		return rol;

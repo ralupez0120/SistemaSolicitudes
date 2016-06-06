@@ -10,7 +10,7 @@ import co.com.inversiones_xyz.ss.exception.DaoException;
 
 
 /**
- * 
+ * Clase que implementa los metodos de la interface SeguimientoDAO
  * @author 
  * 		Juan Carlos Estrada
  * 		Rafael Luna Pérez

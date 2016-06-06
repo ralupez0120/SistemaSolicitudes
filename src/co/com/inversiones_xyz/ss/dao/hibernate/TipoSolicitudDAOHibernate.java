@@ -13,7 +13,7 @@ import co.com.inversiones_xyz.ss.exception.DaoException;
 
 
 /**
- * 
+ * Clase que implementa los metodos de la interface TipoSolicitudDAO
  * @author 
  * 		Juan Carlos Estrada
  * 		Rafael Luna Pérez
@@ -41,7 +41,7 @@ public class TipoSolicitudDAOHibernate extends HibernateDaoSupport implements Ti
 	}
 	
 	/**
-	 * Permite obtener todos los tipoSolicituds del sistema
+	 * Permite obtener todos los tipo de solicituds activos en el sistema
 	 */
 	@Override
 	public List<TipoSolicitud> obtener() throws DaoException {

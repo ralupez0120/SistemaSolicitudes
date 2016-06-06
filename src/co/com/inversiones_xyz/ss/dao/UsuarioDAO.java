@@ -22,7 +22,7 @@ public interface UsuarioDAO {
 	 * Entrega la informacion de un usuario en el sistema dado nombreUsuario
 	 * @param nombreUsuario: nombreUsuario del usuario
 	 * @return instancia de los datos del usuario
-	 * @throws DaoException
+	 * @throws DaoException cuando ocurre un error en la BD
 	 */
 	public Usuario obtener(String nombreUsuario)throws DaoException;
 	

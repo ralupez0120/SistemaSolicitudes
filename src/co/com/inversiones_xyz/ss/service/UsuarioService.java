@@ -17,10 +17,13 @@ import co.com.inversiones_xyz.ss.util.validations.Validaciones;
 
 /**
  * Clase que contiene la logica de negocio para validar los usuarios
- * del sistema
- * 
- * @author Juan Carlos Estrada Rafael Luna Pérez Joan Manuel Rodríguez
- * @version 1.0.0 12/05/2016
+ * @author 
+ * 		Juan Carlos Estrada
+ * 		Rafael Luna Pérez
+ * 		Joan Manuel Rodríguez
+ * @version 1.0.0
+ * 			3/06/2016
+ *
  */
 @Transactional
 public class UsuarioService {

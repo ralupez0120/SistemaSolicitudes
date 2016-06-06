@@ -13,9 +13,13 @@ import co.com.inversiones_xyz.ss.exception.DaoException;
 
 
 /**
- * 
- * @author Juan Carlos Estrada Rafael Luna Pérez Joan Manuel Rodríguez
- * @version 1.0.0 12/05/2016
+ * Clase que implementa los metodos de la interface ProductoDAO
+ * @author 
+ * 		Juan Carlos Estrada
+ * 		Rafael Luna Pérez
+ * 		Joan Manuel Rodríguez
+ * @version 1.0.0
+ * 			29/05/2016
  *
  */
 public class ProductoDAOHibernate extends HibernateDaoSupport implements ProductoDAO {

@@ -12,7 +12,7 @@ import co.com.inversiones_xyz.ss.dto.Sucursal;
 import co.com.inversiones_xyz.ss.exception.DaoException;
 
 /**
- * 
+ * Clase que implementa los metodos de la interface SucursalDAO
  * @author 
  * 		Juan Carlos Estrada
  * 		Rafael Luna Pérez

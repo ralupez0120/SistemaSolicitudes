@@ -8,7 +8,16 @@ import co.com.inversiones_xyz.ss.dao.RolDAO;
 import co.com.inversiones_xyz.ss.dto.Rol;
 import co.com.inversiones_xyz.ss.exception.DaoException;
 
-
+/**
+ * Clase que implementa los metodos de la interface RolDAO
+ * @author 
+ * 		Juan Carlos Estrada
+ * 		Rafael Luna Pérez
+ * 		Joan Manuel Rodríguez
+ * @version 1.0.0
+ * 			29/05/2016
+ *
+ */
 public class RolDAOHibernate extends HibernateDaoSupport implements RolDAO{
 	/**
 	 * Permite obtener un rol dado el codigo

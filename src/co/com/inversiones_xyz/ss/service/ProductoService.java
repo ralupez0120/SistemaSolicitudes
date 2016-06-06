@@ -10,15 +10,24 @@ import co.com.inversiones_xyz.ss.exception.DaoException;
 import co.com.inversiones_xyz.ss.exception.ServiceException;
 
 
-
+/**
+ * Clase que contiene la logica de negocio para obtener los productos registrados en el sistema
+ * @author 
+ * 		Juan Carlos Estrada
+ * 		Rafael Luna Pérez
+ * 		Joan Manuel Rodríguez
+ * @version 1.0.0
+ * 			3/06/2016
+ *
+ */
 @Transactional
 public class ProductoService {
 	private ProductoDAO productoDAO;
 	
 	/**
 	 * 
-	 * @return
-	 * @throws DaoException
+	 * @return la lista de los productos registrado en el sistema
+	 * @throws DaoException cuando ocurre un error instanciando los productos en el sistema
 	 * @throws ServiceException
 	 */
 	public List<Producto> consultarProductos() throws DaoException, ServiceException{
